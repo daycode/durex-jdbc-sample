@@ -16,6 +16,7 @@
         <mysql.version>5.1.46</mysql.version>
         <jdk.version>1.8</jdk.version>
         <druid.version>1.1.10</druid.version>
+        <durex-jdbc-starter.version>1.0.0</durex-jdbc-starter.version>
     </properties>
 
     <parent>
@@ -28,6 +29,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
 
         <dependency>
@@ -50,6 +56,12 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.daycode</groupId>
+            <artifactId>durex-jdbc-spring-boot-starter</artifactId>
+            <version>${durex-jdbc-starter.version}</version>
         </dependency>
     </dependencies>
 </project>
